@@ -1,10 +1,9 @@
-language: node_js
+language: generic
 sudo: required
 services:
   - docker
 
 before_install:
-  - gem install bundler
   - docker build -t kevinh94/docker-react -f Dockerfile.dev .
 
 script:
